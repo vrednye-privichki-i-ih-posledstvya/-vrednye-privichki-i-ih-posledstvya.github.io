@@ -1,29 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 body {
-    background-color: rgb(250, 250, 250);
-    /*background-image: url(background.png);
-    background-repeat: repeat;
-    background-attachment: fixed;*/
+    background-color: rgb(238, 238, 238);
+    background-size: 248.625px 79.56px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 248.625 79.56" width="248.625" height="79.56" style="opacity: 0.3; filter: grayscale(1);"><text x="0em" y="1em" font-size="51" transform="rotate(0 31.875 30.599999999999998)">🚬</text><text x="1.625em" y="1em" font-size="51" transform="rotate(0 114.75 30.599999999999998)">🍺</text><text x="3.25em" y="1em" font-size="51" transform="rotate(0 197.625 30.599999999999998)">💉</text></svg>');
+    background-attachment: fixed;
     margin: 0;
     font-family: 'Raleway', sans-serif;
     font-size: calc(100vw * 0.01464); /*20px*/
 }
 ul {
     padding-left: calc(100vw * 0.0366); /*50px*/
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 ol {
     padding-left: calc(100vw * 0.0366); /*50px*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+img {
+    width: 100%;
+    border-radius: calc(100vw * 0.00512); /*7px*/
+}
+button {
+    font-family: 'Raleway', sans-serif;
+    font-size: calc(100vw * 0.01464); /*20px*/
+    padding: calc(100vw * 0.00512) calc(100vw * 0.01245); /*7px 17px*/
+    border-radius: calc(100vw * 0.02196); /*30px*/
+    border: 0px solid rgb(255, 255, 255);
+    box-shadow: 0px 0px calc(100vw * 0.00512) 0px rgb(0, 0, 0, 0.15);
+    cursor: pointer;
+    margin: 0px calc(100vw * 0.00512); /*17px*/
+}
+.infobg {
+    height: 100%;
+    width: calc(100vw * 0.55);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: calc(100vw * 0.0732); /*100px*/
+    background-color: rgb(110, 69, 255);
+    padding-left: calc(100vw * 0.01464); /*20px*/
+    padding-right: calc(100vw * 0.01464); /*20px*/
+    padding-top: calc(100vw * 0.01464); /*20px*/
+    padding-bottom: calc(100vw * 0.01464); /*20px*/
+    box-shadow: 0px 0px calc(100vw * 0.00512) 0px rgb(0, 0, 0, 0.35);
+    color: white;
+    text-align: center;
 }
 .articlebg {
     height: 100%;
     width: calc(100vw * 0.55);
     margin-left: auto;
     margin-right: auto;
-    margin-top: calc(100vw * 0.0732); /*100px*/
+    margin-top: calc(100vw * 0.01464); /*20px*/
+    margin-bottom: calc(100vw * 0.0732); /*100px*/
     padding-left: calc(100vw * 0.01464); /*20px*/
     padding-right: calc(100vw * 0.01464); /*20px*/
     padding-top: calc(100vw * 0.01464); /*20px*/
     padding-bottom: calc(100vw * 0.01464); /*20px*/
     background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px calc(100vw * 0.00512) 0px rgb(0, 0, 0, 0.15);
     text-align: justify;
+}
+
+@media screen and (max-device-width: 499px) {
+    body {
+        font-size: calc(100vw * 0.0366); /*50px*/
+    }
+    img {
+        border-radius: calc(100vw * 0.01281); /*17.5px*/
+    }
+    button {
+        font-size: calc(100vw * 0.0366); /*50px*/ 
+        padding: calc(100vw * 0.02562) calc(100vw * 0.06222); /*35px 85px*/
+        border-radius: calc(100vw * 0.10981); /*150px*/
+        margin: 0px calc(100vw * 0.00512); /*17px*/
+    }
+    .infobg {
+        width: calc(100vw * 0.90);
+        margin-top: calc(100vw * 0.035);
+        padding-left: calc(100vw * 0.02928); /*40px*/
+        padding-right: calc(100vw * 0.02928); /*40px*/
+        padding-top: calc(100vw * 0.02928); /*40px*/
+        padding-bottom: calc(100vw * 0.02928); /*40px*/
+    }
+    .articlebg {
+        width: calc(100vw * 0.90);
+        margin-top: calc(100vw * 0.035);
+        margin-bottom: calc(100vw * 0.035);
+        padding-left: calc(100vw * 0.02928); /*40px*/
+        padding-right: calc(100vw * 0.02928); /*40px*/
+        padding-top: calc(100vw * 0.02928); /*40px*/
+        padding-bottom: calc(100vw * 0.02928); /*40px*/
+    }
 }
